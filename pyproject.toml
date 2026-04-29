@@ -1,0 +1,23 @@
+[project]
+name = "practice-project2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ritmwa Bewarang",email = "bewarangritmwa@gmail.com"}
+]
+requires-python = ">=3.14, <4.0"
+dependencies = [
+    "flask (>=3.1.3,<4.0.0)",
+    "flask-sqlalchemy-stubs (>=0.2,<0.3)",
+    "postgresqlite (>=0.4.8,<0.5.0)",
+    "pgcli (>=4.4.0,<5.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "sqlalchemy-stubs (>=0.4,<0.5)",
+    "flask-wtf (>=1.3.0,<2.0.0)",
+    "email-validator (>=2.3.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

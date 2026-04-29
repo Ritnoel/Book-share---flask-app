@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <h2>Add a new book</h2>
+
+     <form method="POST" novalidate action="{{url_for('submit_add_book_form')}}" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+
+        {% for error in form.title.errors %}
+            <span style="color:red;">{{error}}</span>
+        {% endfor %}
+        {{ form.title() }}
+
+        {% for error in form.description.errors %}
+            <span style="color:red;">{{error}}</span>
+        {% endfor %}
+        {{ form.description() }}
+
+        {% for error in form.book_photo.errors %}
+            <span style="color:red;">{{error}}</span>
+        {% endfor %}
+        <label>{{form.book_photo.label }}</label>
+        {{ form.book_photo() }}
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+{% endblock %}

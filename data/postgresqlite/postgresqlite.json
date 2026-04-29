@@ -1,0 +1,1 @@
+{"autostart": true, "expire_seconds": 180, "pg_cache_dir": "~/.cache/postgresqlite", "postgresql_version": "14.3", "user": "postgres", "password": "yskDikWKsHxz", "port": 43451, "host": "localhost", "database": "postgres", "socket_id": "DBoEETwo"}

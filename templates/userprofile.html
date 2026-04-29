@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>User's Profile</h2>
+
+<div class="nav_buttons">
+    <a href="{{ url_for('main')}}" class="btn">Home</a>
+</div>
+
+<div>
+    <div class="mythings">
+    <h3>Add Book</h3>
+    <a href="{{ url_for('show_add_book_form')}}" class="btn">Add Book</a>
+</div>
+
+<h3>My Books</h3>
+    <table>
+        <thead>
+            <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in my_books %}
+            <tr>
+                <td>{{ loop.index}}</td>
+                <td>{{ book.title }}</td>
+                <td>
+                    <div class="editdelete">
+                    <form action="" method="POST">
+                        {{ form.hidden_tag() }}
+                        <button type="submit" name="edit" class="edit">Edit</button>
+                    </form>
+                    <form action="" method="POST">
+                        {{ form.hidden_tag() }}
+                        <button type="submit" name="Delete" class="delete">Delete</button>
+                    </form>
+                </td>
+                </div>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <h3>Incoming Requests</h3>
+    <table>
+    <tbody>
+    {% for request in incoming_requests %}
+    <tr>
+            <td>{{ request.borrow_book.title }} for {{request.borrow_user.username}} for {{request.date_requested}}</td>
+            <td>
+                <div class="oknay">
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <button type="submit" name="accept" class="accept">Accept</button>
+                </form>
+
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <button type="submit" name="reject" class="reject">Reject</button>
+                </form>
+            </td>
+        </div>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+</div>
+
+
+<div>
+    <h3>My requests</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>From</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for request in my_requests %}
+            <tr>
+                <td>{{ request.borrow_book.title }}</td>
+                <td>{{ request.borrow_book.owner.username }}</td>
+                <td>{{ request.date_requested }}</td>
+                <td> {{ request.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+/home/ritmwab/.cache/postgresqlite/14.3/bin/postgres "-c" "dynamic_library_path=/home/ritmwab/.cache/postgresqlite/14.3/lib" "-D" "/home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/pgdata" "-p" "43451" "--unix_socket_directories=/tmp/postgresqlite-DBoEETwo"

@@ -1,0 +1,906 @@
+The files belonging to this database system will be owned by user "ritmwab".
+This user must also own the server process.
+
+The database cluster will be initialized with locales
+  COLLATE:  en_GB.UTF-8
+  CTYPE:    en_GB.UTF-8
+  MESSAGES: en_GB.UTF-8
+  MONETARY: nl_NL.UTF-8
+  NUMERIC:  nl_NL.UTF-8
+  TIME:     nl_NL.UTF-8
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+creating directory /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/pgdata ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Europe/Amsterdam
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+initdb: warning: enabling "trust" authentication for local connections
+You can change this by editing pg_hba.conf or using the option -A, or
+--auth-local and --auth-host, the next time you run initdb.
+
+Success. You can now start the database server using:
+
+    /home/ritmwab/.cache/postgresqlite/14.3/bin/pg_ctl -D /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/pgdata -l logfile start
+
+PostgreSQL daemon is starting..
+2026-04-28 12:52:18.338 CEST [23669] LOG:  starting PostgreSQL 14.3 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 12.1.0, 64-bit
+2026-04-28 12:52:18.339 CEST [23669] LOG:  listening on IPv6 address "::1", port 43451
+2026-04-28 12:52:18.339 CEST [23669] LOG:  listening on IPv4 address "127.0.0.1", port 43451
+2026-04-28 12:52:18.342 CEST [23669] LOG:  listening on Unix socket "/tmp/postgresqlite-DBoEETwo/.s.PGSQL.43451"
+2026-04-28 12:52:18.350 CEST [23671] LOG:  database system was shut down at 2026-04-28 12:52:14 CEST
+2026-04-28 12:52:18.356 CEST [23669] LOG:  database system is ready to accept connections
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wdEnvzoTSFkl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QusSUvGoSuWe as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/TwsRqGUTdIDo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gIRVCNcshzah as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/DMioMWxgRivf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jyufPqndgKVz as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IUFIRAgQXZpR as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/FpzPWlXfaOff as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EXGxflyIcxIU as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IHEydWkNzqFV as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dzsqathexITC as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sskzlWMhYCqh as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GXWGpXqCWVvW as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/bpFxmcjmHzCM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uaSNxIyGkyCN as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rqBJWJIFZGjm as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JDzcjqcfWTMZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/MPoviuhuGBQv as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xecVAGKBnZpR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oKxYmfLOmTfy as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HBZaAmMiBNvG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/eFrxHieRiyCt as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GjapeVrOxzAg as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nxKWoFQkKOto as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LDtYdrZpBKZZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KAcUgxIduNVO as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HizXrxFMphfu as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LfZJudsldzBL as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xjqaDBbBGgqI as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gvMLIMiqCTXI as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/TvMjXefTpoym as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GnxVavGXHQXE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jhWgBVluFYBk as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/vvavLyqAlXFI as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JcPvvZastNmT as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PifZOIyZxxxn as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rnlUqVhiXPDw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ggIfaAKWfXoB as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BQNyzhpQOFoG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PZQCQgkRAypl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/bKhphQZNpysF as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xYalFmGXwNBN as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/CtaEMnSqCBVb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PmTzIjRglxJP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pnlEByGIyRRd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jyhncBeetODB as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/NgRCfMZQVCgZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wwhBuGuhodqT as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YkagdRYoDngH as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/umprvEJOoqnA as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KTofEIaGMEAs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iLFzNPIQvnCY as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lLSuBgjvYSks as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/UhjdXZEnbjgR as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RzxWIlhSROaW as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HNzMcekXtScP as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/MnCFSypbDzsI as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pEXPipXsxjKt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GwYhFMGiCCsq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gBurHSeBNmGw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gUYROdVEPapd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/maHeGfeByaCo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/elScncoepngt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/mSKtvcfRbwrQ as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/szLxZetINPLw as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VmOfaxuYBmaj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qvJjUMHQAyhs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LMEFEOhepFKA as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LGCFqKpTdciZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GvyyDErxDWxd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iFAOvvhcbMYW as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pxVGtquqqoyD as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wzrHtzIhKDDs as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XHlpncWOhUln as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PngdYHTjllno as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iunSfWeJGCyJ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/TAjwiFQryORP as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ONbalSnXxUKf as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KthNcrNHKaya as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PsRXZqVIteGX as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VzNflHwCXXTg as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qaTjOXWWyKDm as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YZRusyMhlqBx as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EQNNcGQQQlyc as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VRmSKyWcgZOY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/aDziTRMMjaVZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YDIHnBCOcUkX as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JbHrHFFGrQue as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/egjrhBodRukI as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ikvZuBGhxrWP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IIsJUTsaKaTr as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uWLdNQjdmGmP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GlLOwHGeuYEm as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nokaxgrMCPLM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JsJrRrXvocht as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/hbiNaKjwKnTV as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sxTBxKxZEskP as it was no longer locked
+2026-04-28 14:00:07.535 CEST [32444] ERROR:  relation "user" does not exist at character 13
+2026-04-28 14:00:07.535 CEST [32444] STATEMENT:  INSERT INTO "user" (username, login_link, phone_number, privacy_statement) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::BOOLEAN) RETURNING "user".id
+2026-04-28 14:00:16.724 CEST [32444] ERROR:  relation "user" does not exist at character 13
+2026-04-28 14:00:16.724 CEST [32444] STATEMENT:  INSERT INTO "user" (username, login_link, phone_number, privacy_statement) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::BOOLEAN) RETURNING "user".id
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dPdUzejJtvVf as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wNdPQRWlUCCL as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+2026-04-28 14:01:00.352 CEST [32793] ERROR:  relation "user" does not exist at character 13
+2026-04-28 14:01:00.352 CEST [32793] STATEMENT:  INSERT INTO "user" (username, login_link, phone_number, privacy_statement) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::BOOLEAN) RETURNING "user".id
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZWmZhSLuVHZx as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QwAwtZfjOqAy as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uIiMsmWuFWPu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/UqEbuXgMpZvv as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/SYNnVdnWzXDv as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/UrsZrkvZfxix as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZNLIoGSewCcn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ULNMoiXPLmKq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VmNCyQCShhFe as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/fZAawkAGTbho as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/aMsmtnAViLQY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gDetLFVynChr as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WUHlYGgQEVmY as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PTFFbvKEIytM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nQZAtVCuFdtQ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uMMzqiSfFHlF as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WAZCQVBbjbsF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PILFofyNrZxG as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QeirJZGjEdvb as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/mangZjSnFXzl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pWcgYuOotNVR as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zGIndezUIhdD as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xsDoofbtMSjo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/FQVHrLVfpzDb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XBocmFQFxukg as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tLmaKormBaMa as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VtsgLOMWDQAh as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YKVIyNodCrRt as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XPiiPOeQEtZr as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iUAZLxFZiCZQ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kbEXtqOijxjb as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kwdzMDRqpgmr as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AbqhMMelqofx as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JLoOcXUgJwua as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iEceGAzDyRns as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lsDITZVzEsFB as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oJKNGMcPzgbR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JmUiYwfNSagt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IpDZHKFAhlWH as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wSJDaXBgCVhy as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WJTzZVcABwxO as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gNEeQeBOdeWZ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/yrXnSABNfyrT as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kEPxirWxSzwC as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rXepxIkeTnNQ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xgKoijCaAUDD as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/CUfBvCWZrYcl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/mFTdjqZMbiKC as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AKVpejwsDYjx as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/TVCRJanoCeLZ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QwdjeXKSNoAA as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YtXYHqILwQPv as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qqJDUEBOxiBb as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dVODUKyHFQLQ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ctBJymTPigSp as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/hMUWyPvQubLG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/MtgiFnASwCNR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JzsKypraHxMm as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/CwzwZZZIcEgu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ppOBUmXenFVd as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sEiFvPaqAJjt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/bPipjTJLhIuH as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PgUiTiDaqaop as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XZacRreBxDGD as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/udiudKuqRFIS as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zPVjpSvldoQu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oTHDttxhNwJl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XntIjFiOxGTN as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xWUUbjFdxhJb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BAHSYMMOYAKM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/hfbxAjGnlGsM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EXDOWrmrvHXE as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/mHXTYZKAHhBi as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VJUXUMcXdCVp as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WamSewHKMdLa as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BfxcbnCHijqZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jEYGKsYSpBOG as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YiTVKyWartnB as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/fwqRiDUojgZN as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HHixIDWLUtYA as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/NzmNXBqxlzfL as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JYpdpUDmjpVM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/vHIafMuwdBFL as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/FFmauDykyLED as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ORGqTbhYNdpB as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YWccuHCzHQle as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EgYcedsehvQv as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/vSlJbwgjzsdg as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RpEoDHkqXtlq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/azuhWqdnZLmS as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZJLzQeJZzIuf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iIEmQhfhkKDM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wACINOAtWSXu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IFDpWYuTSYjD as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IpmrpkfYzhYd as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/OgDBLPTDSXGI as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lcLHOmjAqkTp as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zCFAdlqYOfzH as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KeIsOBzPtgdF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kXXvZUcsxoxH as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nysbZEfwkZOP as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jIBKYQnTFuas as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qDlpzZvkzfAY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BCxhnHnyLyHL as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RqmmXrgDoUKd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gAdvtIyxHRHV as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YzBdoEykYTxw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gsCvvshwZyKn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/aGSFpvFiWkqG as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/bVyJwmuonWJa as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/MXwxTFORcaiH as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VbXVHXOGDxks as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YDsqzaTPrUlx as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JmjCzvGmodpw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QnEPeNZjuTxz as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GLyBUMkIKrNm as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uArajDKoTdIU as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/aSFRtpEvEmUQ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/guRzoYFTxfyu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rmuCxeoMHNCO as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qGQKseAwYIMf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ASsyGwgsVjsN as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AOWxhXQBwAMT as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oEnPqWSFyAAA as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZxQvHOIftEoX as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZcwUyUTcbRns as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/DFDxMdHpxikc as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ElwUumhHBAvW as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/eMhEgPNbUEwG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RXexivmcVxGq as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YQkINtFOhtoo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sshXbgUaCero as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/piiZOXOHkLND as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/SnlPwDWggrSe as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ysCAfYZZTYdD as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/yOzDzwRKJrRl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jrpThBVLiJnf as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gSJxjgbQDILg as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GfgQSHTbYFtS as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/SDpunauPgONA as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ILmuysXGuZmm as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GDmDUMToJPKQ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JxhmUxrGduAJ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BXIbwCruKaSa as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QOGpNsjPlybc as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HeMghDhByjPB as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/olcBoSzdIUnY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/hDtXYilWbHAM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pcbVTjwNOFgX as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/SJravRMYnpDo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RSDjvkxAyWQc as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kujsSFlnGJyP as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IbgCKQhJBIGP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QwjqqzYxaScY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dBtwYkXfcQNu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uTLOvaNZsXqi as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ieUMqXTLsoPh as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jtujupTuFmbf as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/HVaGItFNiYJQ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/vSRUteXQOFeu as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zzFJZcZcBOhp as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/UOmZWITReXvd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AJDNaLAqCRNH as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ylLntBIqFrXs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/IEkDOzhYxiim as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/NmeUHyJLyVtS as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/quZfOYeBIlyp as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/acPJCwazMlGi as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/REjZLabnEXeA as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LSwtTnstkQLu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XWxawLgDjkHz as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EapXOtaEiAOs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/aPjZQoUfVaay as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wdoHbUgAekcy as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ytHMnvhGhOQx as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xdTDHPphUgFZ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BnnSYCcMIpcz as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KiKgSDNhCBgd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tLouufiGvNVd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RwShByWKqBGh as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gCDaUSHLHYDn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AbpTMQoZWivT as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/FEZBtvqqpnQo as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EgsYrmVMrYuF as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/DtlqrAuUKMOI as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EFNCsGYHSztC as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XWxDXPNtCfft as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YjogwXzwigcm as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xuoSpYzabwPp as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tCWzNaqkYlwy as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VAEydnxHhSFL as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/drhpeVFErdfg as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/csoxijKVfniU as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RBTTyLsMWWUf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nGqoHDWLUopj as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BYTsvulqlwpT as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iBuGAphQwwQn as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/CENTRROyWIsq as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sYeSHttbWOxz as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nnkaGTKIydeq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LXBRjrhHzFne as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jicSLwXyzrOf as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/quORMFRAezsj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/OwRcrZxvGsiF as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BiVvOEhpbwns as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pcxGOSMfUbos as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lqAbXrrAxmWi as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lqGdvnLHyhLR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BAakHTdQaHvL as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/SnugOoDkXzhE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/bcYbAEVcbRZA as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AYIjGMHSjDon as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/OmmSOvJBTmUO as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/MSHwOWVGfrCJ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qMIXXrHBLhZV as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dGQIorXOFgml as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rzMkOKGNbyXs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rHPlVFqTLwAq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tEBKRmdWbESN as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LJJDoAxtahzU as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/nLQOCJnpriJM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xVMtySFxZbrd as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ttzHobsNuaxx as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ktuTzjxwRGcL as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/dnTEeqzEsGBq as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/DbljZmmAMYAE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lyiLEIEwhVeU as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QVxaKBnwdhNT as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gotgUrVLxyjs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jKvSNUFovWzf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WYANmieFUtkj as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tjGLQsbznChG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uuqPZXmNNron as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oDaMmbJkvvXj as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zzqMtCcUKFXN as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/iBoLosSqDpfM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/klLzmgcbppuA as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/OHevkwpRTarT as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LLaGtikVLUEE as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZoTYSVOzLPwW as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PFiHBlpEGKTt as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JqWKPjFDonhT as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/cXSboqOdtISu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ZanoTbprvvVK as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/fmERYqkmTqto as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ESxTWhtXFqCN as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KIgVDdXiRkvk as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/yJnRElQHFOKv as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EyZSekZQttXV as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/cBalkMqzCfkJ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/yvzNOVSiUPsh as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/TpjsgbuVAuNF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XjYwZZhvYBiJ as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sgqXUCPHpvTZ as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ITCUkArapWQf as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KvriOQlGayUE as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GcHoDacVXxbb as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GCSXaUprflyP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VZNCemUsZCnO as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/WhBNoOmlePYF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/fgMNEgjkLBsl as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/hIkAsImHBpRE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kWxlILSmFxtR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/qlcaRvWYTrxq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/rwNvaqPjLcoy as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/vfrKgZEQHjPj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xCRVmcAQLIsU as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jzLYLVgCccpC as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XidcDMdguHdM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/RDjTPOHOQQHa as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/epbJOeGEQaDb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KyrUrpiuVekd as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/riIXfKQRLSKx as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/uEhBtObqpicw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/QBvPOXkhIxWe as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VVayuAGyYMrY as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/jSHSmwkwQOkr as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LhThXlTmvaVE as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/EfCjSkrdvcOw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/BsyvNBhJiSAC as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oYcpHmeHxLTz as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/cuYtIfEwqVdR as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/AxApNAQQGkXu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ORKeGxlBpdey as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/xJLrfraaKdwf as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kyBdsORAcFlW as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/gGnUZzfMypar as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PzRWhAftfaMa as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/ETgsGxlEGsFI as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/cuRPpUfrrzZs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kyaMBgTbAKCF as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/FgkkqHHQTzJn as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/pNoOnXCSZWWs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/CEaUxQdNhfBn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/XHbhiiHXGPeU as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lGsVEswtZqZI as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GYUyFTlUHrPt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/wHLyXrAaokaC as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tCdnHgZRFIAE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/YGAImPyqkdit as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/GkBiQmRDQmMe as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/lcUTvfAjfRlE as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/VHhnoeIgOqnP as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/LvKXclKdlxcL as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/sOfCilzcTatj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/JzvyjSXHcYPn as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/KVlsHNJlCUpi as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/eeeALzZXhqXT as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/zcYMmgmOYbrj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/plsTxAEreDXd as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/PYpvaDqLuJrB as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/kwUOwwQaeibs as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/tazFfmXVJchU as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/NtzhnVWnybWe as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/yiQGoRDZprsn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/lms/1b-webapps/practice-project2/data/postgresqlite/locks/oVotJtenDUCB as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite shutting down idle server...
+2026-04-29 15:18:16.855 CEST [23669] LOG:  received smart shutdown request
+2026-04-29 15:18:16.868 CEST [23669] LOG:  background worker "logical replication launcher" (PID 23677) exited with exit code 1
+2026-04-29 15:18:16.868 CEST [23672] LOG:  shutting down
+2026-04-29 15:18:16.907 CEST [23669] LOG:  database system is shut down
+PostgreSQLite shutdown successful

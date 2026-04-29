@@ -1,0 +1,20 @@
+class Borrow(db.Model):
+    id = sa.Column(sa.Integer, primary_key=True)
+    user_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
+    book_id = sa.Column(sa.Integer, sa.ForeignKey('book.id'))
+    date_requested = sa.Column(sa.Date)
+    status = sa.Column(sa.Boolean, default=False)
+
+class User(db.Model):
+    id = sa.Column(sa.Integer, primary_key=True)
+    phone_number = sa.Column(sa.String)
+    privacy_statement = sa.Column(sa.Boolean, default=False)
+
+class Book(db.Model):
+    id = sa.Column(sa.Integer, primary_key=True)
+    date_added = sa.Column(sa.Date)
+    title = sa.Column(sa.String)
+    description = sa.Column(sa.String)
+    item_photo = sa.Column(sa.String)
+    owner_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
+    borrower_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
