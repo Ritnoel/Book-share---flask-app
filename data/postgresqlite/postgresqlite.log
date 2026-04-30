@@ -904,3 +904,54 @@ PostgreSQLite shutting down idle server...
 2026-04-29 15:18:16.868 CEST [23672] LOG:  shutting down
 2026-04-29 15:18:16.907 CEST [23669] LOG:  database system is shut down
 PostgreSQLite shutdown successful
+PostgreSQL daemon is starting..
+2026-04-30 15:31:49.995 CEST [30207] LOG:  starting PostgreSQL 14.3 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 12.1.0, 64-bit
+2026-04-30 15:31:49.995 CEST [30207] LOG:  listening on IPv6 address "::1", port 43451
+2026-04-30 15:31:49.995 CEST [30207] LOG:  listening on IPv4 address "127.0.0.1", port 43451
+2026-04-30 15:31:49.999 CEST [30207] LOG:  listening on Unix socket "/tmp/postgresqlite-DBoEETwo/.s.PGSQL.43451"
+2026-04-30 15:31:50.007 CEST [30209] LOG:  database system was shut down at 2026-04-29 15:18:16 CEST
+2026-04-30 15:31:50.013 CEST [30207] LOG:  database system is ready to accept connections
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/XaGcVRKZOnxt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+2026-04-30 15:37:08.218 CEST [30513] ERROR:  column "status" is of type boolean but expression is of type character varying at character 26
+2026-04-30 15:37:08.218 CEST [30513] HINT:  You will need to rewrite or cast the expression.
+2026-04-30 15:37:08.218 CEST [30513] STATEMENT:  UPDATE borrow SET status=$1::VARCHAR WHERE borrow.id = $2::INTEGER
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/GEQPiPNmFyGu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/anEZKKnKBXnp as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/TKplGKIqlEtY as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/YuukkiKqFytj as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/fsKulWSSZKLp as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/MRLqQiSvNaRF as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/PYnWVJEdkDoj as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/iIEaPPTSecap as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/XzeNZTslkjau as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/uWKifXzXEecG as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/PSEGHwMdDNBi as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/rdaWisMFapuw as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/EgETAMCNIyxL as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/dIHbXHQnnePS as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/dbyoYNXGWMEi as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/nrFaxEDeuuXv as it was no longer locked
+PostgreSQLite now has 0 client(s)
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/hHKRCqSKzlfY as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/LSrqycZLYONJ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/zVAEYcfRwJTK as it was no longer locked
+PostgreSQLite now has 0 client(s)

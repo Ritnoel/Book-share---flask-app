@@ -29,11 +29,11 @@
                 <td>{{ book.title }}</td>
                 <td>
                     <div class="editdelete">
-                    <form action="" method="POST">
+                    <form action="{{ url_for('edit_book', book_id=book.id) }}" method="GET">
                         {{ form.hidden_tag() }}
                         <button type="submit" name="edit" class="edit">Edit</button>
                     </form>
-                    <form action="" method="POST">
+                    <form action="{{ url_for('delete', book_id=book.id) }}" method="POST">
                         {{ form.hidden_tag() }}
                         <button type="submit" name="Delete" class="delete">Delete</button>
                     </form>
@@ -55,12 +55,12 @@
             <td>{{ request.borrow_book.title }} for {{request.borrow_user.username}} for {{request.date_requested}}</td>
             <td>
                 <div class="oknay">
-                <form method="POST">
+                <form method="POST" action="{{ url_for('accept', borrow_id=request.id) }}">
                     {{ form.hidden_tag() }}
                     <button type="submit" name="accept" class="accept">Accept</button>
                 </form>
 
-                <form method="POST">
+                <form method="POST" action="{{ url_for('reject', borrow_id=request.id) }}">
                     {{ form.hidden_tag() }}
                     <button type="submit" name="reject" class="reject">Reject</button>
                 </form>

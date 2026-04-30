@@ -30,7 +30,7 @@ class Borrow(db.Model):
     user_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
     book_id = sa.Column(sa.Integer, sa.ForeignKey('book.id'))
     date_requested = sa.Column(sa.Date)
-    status = sa.Column(sa.Boolean, default=False)
+    status = sa.Column(sa.String, default="pending")
     borrow_user = db.relationship('User', foreign_keys='Borrow.user_id', back_populates='user_borrow_history')
     borrow_book = db.relationship('Book', foreign_keys='Borrow.book_id', back_populates='book_borrow_history')
 
@@ -56,12 +56,12 @@ class Book(db.Model):
     owner = db.relationship('User', foreign_keys='Book.owner_id', back_populates='owned_books')
     borrower_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
     borrower = db.relationship('User', foreign_keys='Book.borrower_id', back_populates='borrowed_books')
-    book_borrow_history = db.relationship('Borrow', foreign_keys='Borrow.book_id', back_populates='borrow_book')
+    book_borrow_history = db.relationship('Borrow', foreign_keys='Borrow.book_id', back_populates='borrow_book', cascade='all, delete-orphan')
 
 
 # FORMS
 class CreateAccountForm(FlaskForm):
-    name = StringField('Name', render_kw={"placeholder": "Name"})
+    username = StringField('UserName', render_kw={"placeholder": "UserName"})
     phone_number = TelField('Phone Number', render_kw={"placeholder": "Phone Number"})
     privacy_statement = BooleanField("I've read the privacy statement and i accept")
 
@@ -264,6 +264,71 @@ def user_profile():
     my_requests = Borrow.query.filter(Borrow.user_id == user_id).all()
    
     return render_template('userprofile.html', form=form, my_books=my_books, incoming_requests=incoming_requests, my_requests=my_requests)
+
+
+@app.route("/accept/<int:borrow_id>", methods=['GET', 'POST'])
+def accept(borrow_id):
+
+    accept_status = Borrow.query.get_or_404(borrow_id)
+    accept_status.status = "accepted"
+
+    db.session.commit()
+    
+    return redirect(url_for('user_profile'))
+
+
+@app.route("/reject/<int:borrow_id>", methods=['GET', 'POST'])
+def reject(borrow_id):
+
+    reject_status = Borrow.query.get_or_404(borrow_id)
+    reject_status.status = "rejected"
+
+    db.session.commit()
+   
+    return redirect(url_for('user_profile'))
+
+
+@app.route('/delete/<int:book_id>', methods=['POST'])
+def delete(book_id):
+
+    delete_book = Book.query.get_or_404(book_id)
+
+    db.session.delete(delete_book)
+    db.session.commit()
+
+    return redirect(url_for('user_profile'))
+
+
+@app.route('/edit_book/<int:book_id>', methods=['GET', 'POST'])
+def edit_book(book_id):
+
+    book = Book.query.get_or_404(book_id)
+    form = AddbookForm(obj=book)
+
+    if form.validate_on_submit():
+    
+        old_image = book.book_photo
+        book.title = form.title.data
+        book.description = form.description.data
+
+        if form.book_photo.data:
+            if old_image:
+                old_path = os.path.join("static", "images", old_image)
+                if os.path.exists(old_path):
+                    os.remove(old_path)
+
+            r_string = random_string()
+            file_name = r_string
+            save_to_path = os.path.join("static", "images", file_name)
+            form.book_photo.data.save(save_to_path)
+            book.book_photo = r_string
+        else:
+            book.book_photo = old_image
+
+        db.session.commit()
+        return redirect(url_for('main'))
+
+    return render_template('editbook.html', form=form, book=book)
 
 
 @app.route("/logout", methods=['GET', 'POST'])

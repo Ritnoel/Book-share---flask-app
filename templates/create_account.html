@@ -8,10 +8,10 @@
      <form method="POST" novalidate action="{{url_for('submit_create_account_form')}}">
         {{ form.hidden_tag() }}
 
-        {% for error in form.name.errors %}
+        {% for error in form.username.errors %}
             <span style="color:red;">{{error}}</span>
         {% endfor %}
-        {{ form.name() }}
+        {{ form.username() }}
 
         {% for error in form.phone_number.errors %}
             <span style="color:red;">{{error}}</span>

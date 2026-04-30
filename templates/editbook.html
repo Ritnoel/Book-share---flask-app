@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+    <h2>Edit Book</h2>
+
+
+    <form method="POST" action="{{url_for('edit_book', book_id=book.id)}}" novalidate enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+
+        {% for error in form.title.errors %}
+            <span style="color:red;">{{error}}</span>
+        {% endfor %}
+        <label>{{form.title.label }}</label>
+        {{ form.title() }}
+
+        {% for error in form.description.errors %}
+            <span style="color:red;">{{error}}</span>
+        {% endfor %}
+        <label>{{form.description.label }}</label>
+        {{ form.description() }}
+
+
+        {% if book.book_photo %}
+            <img src="{{ url_for('static', filename='images/' + book.book_photo) }}" width="100", height="100">
+        {% endif %}
+
+        <label>{{form.book_photo.label }}</label>
+        {{ form.book_photo() }}
+        
+
+        <button type="submit">Save</button>
+
+    </form>
+
+
+{% endblock %}
