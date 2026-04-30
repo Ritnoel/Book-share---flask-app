@@ -4,7 +4,7 @@ from flask import request, render_template, redirect, url_for, session, flash
 import postgresqlite
 import sqlalchemy as sa
 from flask_wtf import FlaskForm
-from wtforms import StringField, FileField, IntegerField, BooleanField, TelField, DateField
+from wtforms import StringField, FileField, BooleanField, TelField, DateField
 from wtforms.validators import InputRequired, ValidationError, NumberRange, Length
 from flask_wtf.file import FileAllowed, FileRequired
 import os
@@ -61,23 +61,23 @@ class Book(db.Model):
 
 # FORMS
 class CreateAccountForm(FlaskForm):
-    username = StringField('UserName', render_kw={"placeholder": "UserName"})
-    phone_number = TelField('Phone Number', render_kw={"placeholder": "Phone Number"})
-    privacy_statement = BooleanField("I've read the privacy statement and i accept")
+    username = StringField('UserName', render_kw={"placeholder": "UserName"}, validators=[InputRequired(message="Please enter your name")])
+    phone_number = TelField('Phone Number', render_kw={"placeholder": "Phone Number"}, validators=[InputRequired(message="Please enter your phone number")])
+    privacy_statement = BooleanField("I've read the privacy statement and i accept", validators=[InputRequired(message="Please agree to the terms of service")])
 
 
 class LoginForm(FlaskForm):
-    phone_number = TelField('Phone Number', render_kw={"placeholder": "Phone Number"})
+    phone_number = TelField('Phone Number', render_kw={"placeholder": "Phone Number"}, validators=[InputRequired()])
 
 
 class AddbookForm(FlaskForm):
-    title = StringField('Title', render_kw={"placeholder": "Title"})
-    description = StringField('Description', render_kw={"placeholder": "Description"})
-    book_photo = FileField('Book Photo')
+    title = StringField('Title', render_kw={"placeholder": "Title"}, validators=[InputRequired()])
+    description = StringField('Description', render_kw={"placeholder": "Description"}, validators=[InputRequired()])
+    book_photo = FileField('Book Photo', validators=[FileAllowed(['png', 'jpg', 'jpeg'], 'Images only!'), FileRequired('You must upload a picture')])
 
 
 class DateForm(FlaskForm):
-    date_requested = DateField('Date')
+    date_requested = DateField('Date', validators=[InputRequired()])
 
 
 class EmptyForm(FlaskForm):

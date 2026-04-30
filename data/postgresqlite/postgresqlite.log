@@ -955,3 +955,132 @@ PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgres
 PostgreSQLite now has 1 client(s)
 PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/zVAEYcfRwJTK as it was no longer locked
 PostgreSQLite now has 0 client(s)
+PostgreSQLite shutting down idle server...
+2026-04-30 15:54:56.165 CEST [30207] LOG:  received smart shutdown request
+2026-04-30 15:54:56.178 CEST [30207] LOG:  background worker "logical replication launcher" (PID 30215) exited with exit code 1
+2026-04-30 15:54:56.178 CEST [30210] LOG:  shutting down
+2026-04-30 15:54:56.238 CEST [30207] LOG:  database system is shut down
+PostgreSQLite shutdown successful
+PostgreSQL daemon is starting..
+2026-04-30 16:01:11.018 CEST [35209] LOG:  starting PostgreSQL 14.3 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 12.1.0, 64-bit
+2026-04-30 16:01:11.018 CEST [35209] LOG:  listening on IPv6 address "::1", port 43451
+2026-04-30 16:01:11.018 CEST [35209] LOG:  listening on IPv4 address "127.0.0.1", port 43451
+2026-04-30 16:01:11.024 CEST [35209] LOG:  listening on Unix socket "/tmp/postgresqlite-DBoEETwo/.s.PGSQL.43451"
+2026-04-30 16:01:11.036 CEST [35212] LOG:  database system was shut down at 2026-04-30 15:54:56 CEST
+2026-04-30 16:01:11.042 CEST [35209] LOG:  database system is ready to accept connections
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/ruUoJCbVzZdq as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/TmoktAVphYTF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/ZowUzCTBPevm as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/ZfgDLSofIHHp as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/wJNrtdJOdHEq as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/nFhUqwlPgBIy as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/vzdowYkJYQhy as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/emDSRyrvSKKl as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/iROmSzFCHYph as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/aFVYUQOjzius as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/QygDuCkjPRXC as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/FusICuReDkXx as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/WxorVozBALQh as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/JuFykioNKwxb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/DdWSWopFLxiL as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/hPHuvmmbBgjM as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/nTHZQWKDhelb as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/hWoshdkmkKLn as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/cDWnVUKUBjAt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/CzQcDKNTtMjq as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/GVxouMzGPIEM as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/sfmouCgBmiGU as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/GGaZELhwRZAl as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/VSghMjuZgxOP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/kqgtiPCbnUxj as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/FLZPXKfWORHS as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/BDMBxgsSVAuO as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/CApKiOtsoYDu as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/FqNmEPiqiwHw as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/AXBeaIXpEuBQ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/LHmtzCYttbcv as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/aGcSVZafFyjW as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/wVlPpnjEWqkq as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/rwWnhquGoqEP as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/mYJegeLZDeKK as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/rWwhDAKoUyRy as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/AVEUUhaBkyHe as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/BnrzzqXuTlXR as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/VXuXOSsLHRCz as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/XoyfsceShwrD as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/OlrcYlGqQnWF as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/MUaAXlOznLfv as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/hItpcCKJrpjW as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/WBHFqAGwwqeL as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/eXHzyixQiryc as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/eMNBesEEMsyH as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/RRDevcIMXVFa as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/oVJDeBkUsdcN as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/vUHtgmMNeUVG as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/hgfuVgyunFpc as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/nmhMjSISeDCt as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/UxmbrFmqXrrg as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/wFspNpkogqfj as it was no longer locked
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/WvpVUmKRrmRu as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/onnQLoSaNXxs as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/HjJWfMaqfnoh as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/ZGvhvkgQAsMQ as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/EmIxYpRlCYwj as it was no longer locked
+PostgreSQLite now has 1 client(s)
+PostgreSQLite now has 2 client(s)
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/pUoUpFLhEhUU as it was no longer locked
+PostgreSQLite removed /home/ritmwab/Desktop/Book-share---flask-app/data/postgresqlite/locks/FZXsNMaCWStg as it was no longer locked
