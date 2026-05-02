@@ -18,3 +18,16 @@ class Book(db.Model):
     item_photo = sa.Column(sa.String)
     owner_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
     borrower_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
+
+
+
+
+def verify_code(self, number: str, code: int) -> bool:
+    return self.__codes.get(number, False) == code
+It already returns True or False. So:
+
+if provider.verify_code(...) — checks if the return value is True directly
+if code == provider.verify_code(...) — compares the code integer to a boolean (True/False), which doesn't make sense
+
+You only need == when you're comparing two values. When a function already returns a boolean, you can use it directly in the if statement.
+Does that make sense?

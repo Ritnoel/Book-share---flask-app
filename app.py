@@ -1,15 +1,17 @@
 from flask_sqlalchemy import SQLAlchemy
 import flask
-from flask import request, render_template, redirect, url_for, session, flash
+from flask import request, render_template, redirect, url_for, session, flash, abort
 import postgresqlite
 import sqlalchemy as sa
 from flask_wtf import FlaskForm
-from wtforms import StringField, FileField, BooleanField, TelField, DateField
+from wtforms import StringField, FileField, BooleanField, TelField, DateField, IntegerField
 from wtforms.validators import InputRequired, ValidationError, NumberRange, Length
 from flask_wtf.file import FileAllowed, FileRequired
 import os
 from string_generator import random_string
 from datetime import date
+from sms import Provider
+# import sms
 
 
 app = flask.Flask(__name__)
@@ -19,9 +21,8 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 
 
 db = SQLAlchemy(app)
-
-# Book.borrower_id answers "who has this book right now?"
-# Borrow answers "who has ever borrowed this book and when
+provider = Provider("BookShare")
+# sms.provider = Provider("BookShare")
 
 
 # DATABASE TABLES
@@ -59,6 +60,12 @@ class Book(db.Model):
     book_borrow_history = db.relationship('Borrow', foreign_keys='Borrow.book_id', back_populates='borrow_book', cascade='all, delete-orphan')
 
 
+# VALIDATORS
+def validate_date_requested(self, field):
+    if field.data < date.today():
+        raise ValidationError("Date cannot be in the past")
+
+
 # FORMS
 class CreateAccountForm(FlaskForm):
     username = StringField('UserName', render_kw={"placeholder": "UserName"}, validators=[InputRequired(message="Please enter your name")])
@@ -77,7 +84,11 @@ class AddbookForm(FlaskForm):
 
 
 class DateForm(FlaskForm):
-    date_requested = DateField('Date', validators=[InputRequired()])
+    date_requested = DateField('Date', validators=[InputRequired(), validate_date_requested])
+
+
+class CodeForm(FlaskForm):
+    enter_code = IntegerField('Enter Code', validators=[InputRequired()])
 
 
 class EmptyForm(FlaskForm):
@@ -142,10 +153,63 @@ def submit_login_form():
         # return redirect(url_for('login'))
         return render_template('login.html', form=form)
     
+    code = provider.send_verification(phone_number, existing_user.username)
+    session['verification_code'] = code
+    
     user_id = existing_user.id
-    session['user_id'] = user_id
+    session['pending_user_id'] = user_id
 
-    return redirect(url_for('main'))
+    return redirect(url_for('show_verification'))
+
+
+@app.route('/verification', methods=['GET'])
+def show_verification():
+
+    form = CodeForm()
+
+    return render_template('verification.html', form=form)
+
+
+@app.route('/verification/submit', methods=['POST'])
+def submit_verification():
+
+    form = CodeForm()
+
+    if not form.validate_on_submit():
+        return render_template('login.html', form=form)
+    
+    current_user = User.query.get_or_404(session['pending_user_id'])
+
+    code = form.enter_code.data
+    if provider.verify_code(current_user.phone_number, code):
+        session['user_id'] = session['pending_user_id']
+        provider.remove_number(current_user.phone_number)
+        return redirect(url_for('main'))
+    else:  # noqa: RET505
+        flash("Code is wrong", "error")
+        return render_template('verification.html', form=form)
+        # return redirect(url_for('main'))
+
+
+# @app.route('/login/submit', methods=['POST'])
+# def submit_login_form():
+#     form = LoginForm()
+
+#     if not form.validate_on_submit():
+#         return render_template('login.html', form=form)
+    
+#     phone_number = form.phone_number.data
+#     existing_user = User.query.filter_by(phone_number=phone_number).first()
+
+#     if not existing_user:
+#         flash("Phone_number not found", "error")
+#         # return redirect(url_for('login'))
+#         return render_template('login.html', form=form)
+    
+#     user_id = existing_user.id
+#     session['user_id'] = user_id
+
+#     return redirect(url_for('main'))
 
 
 @app.route('/', methods=['GET'])
@@ -229,6 +293,16 @@ def submit_request_book(book_id):
     book = Book.query.get_or_404(book_id)
 
     form = DateForm()
+
+    user_id = session.get('user_id')
+
+    # A user cannot borrow their own book - check if user the user in session
+    if user_id == book.owner_id:
+        abort(403)
+
+    # A user cannot request a book that has already been borrowed
+    if book.borrower_id is not None:
+        abort(403)
     
     if not form.validate_on_submit():
         return render_template('request.html', form=form, book=book)
@@ -269,7 +343,13 @@ def user_profile():
 @app.route("/accept/<int:borrow_id>", methods=['GET', 'POST'])
 def accept(borrow_id):
 
+    user_id = session.get('user_id')
     accept_status = Borrow.query.get_or_404(borrow_id)
+
+    # A user cannot accept requests that aren't for their books -
+    if user_id != accept_status.borrow_book.owner_id:
+        abort(403)
+
     accept_status.status = "accepted"
 
     db.session.commit()
@@ -280,7 +360,17 @@ def accept(borrow_id):
 @app.route("/reject/<int:borrow_id>", methods=['GET', 'POST'])
 def reject(borrow_id):
 
+    user_id = session.get('user_id')
     reject_status = Borrow.query.get_or_404(borrow_id)
+
+    # reject_status — the Borrow object you fetched
+    # reject_status.borrow_book — the Book that is being borrowed (using the relationship)
+    # reject_status.borrow_book.owner_id — the id of the user who owns that book
+
+    # A user cannot reject requests that aren't for their books -
+    if user_id != reject_status.borrow_book.owner_id:
+        abort(403)
+
     reject_status.status = "rejected"
 
     db.session.commit()
@@ -292,6 +382,11 @@ def reject(borrow_id):
 def delete(book_id):
 
     delete_book = Book.query.get_or_404(book_id)
+    user_id = session.get('user_id')
+
+    # A user cannot delete someone else's book - check if user is not the user in session
+    if user_id != delete_book.owner_id:
+        abort(403)
 
     db.session.delete(delete_book)
     db.session.commit()
@@ -304,6 +399,12 @@ def edit_book(book_id):
 
     book = Book.query.get_or_404(book_id)
     form = AddbookForm(obj=book)
+
+    user_id = session.get('user_id')
+
+    # A user cannot edit someone else's book - check if user is not the user in session
+    if user_id != book.owner_id:
+        abort(403)
 
     if form.validate_on_submit():
     
